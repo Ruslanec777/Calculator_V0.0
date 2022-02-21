@@ -24,9 +24,9 @@ namespace Сalculator_V0._0
                 textBoxResult.Text += button.Text;
             }
 
-            if (textBoxResult.Text.Length>1&& textBoxResult.Text[0]=='0')
+            if (textBoxResult.Text.Length > 1 && textBoxResult.Text[0] == '0')
             {
-                textBoxResult.Text.Remove(0);
+                textBoxResult.Text= textBoxResult.Text.Remove(0,1);
             }
         }
 
@@ -34,11 +34,11 @@ namespace Сalculator_V0._0
         {
             if (textBoxResult.Text[0] == '-')
             {
-                textBoxResult.Text= textBoxResult.Text.Remove(0, 1);
+                textBoxResult.Text = textBoxResult.Text.Remove(0, 1);
             }
             else
             {
-                textBoxResult.Text= textBoxResult.Text.Insert(0, "-");
+                textBoxResult.Text = textBoxResult.Text.Insert(0, "-");
             }
         }
     }
