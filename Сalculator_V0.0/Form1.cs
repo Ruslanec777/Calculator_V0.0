@@ -28,8 +28,6 @@ namespace Сalculator_V0._0
             {
                 textBoxResult.Text.Remove(0);
             }
-
-
         }
 
         private void butSign_Click(object sender, EventArgs e)
