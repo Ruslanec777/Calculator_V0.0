@@ -52,7 +52,7 @@
             this.button22 = new System.Windows.Forms.Button();
             this.button23 = new System.Windows.Forms.Button();
             this.button24 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.textBoxResult = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -63,11 +63,12 @@
             this.butSign.Location = new System.Drawing.Point(2, 426);
             this.butSign.MinimumSize = new System.Drawing.Size(80, 50);
             this.butSign.Name = "butSign";
-            this.butSign.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.butSign.Padding = new System.Windows.Forms.Padding(3);
             this.butSign.Size = new System.Drawing.Size(80, 50);
             this.butSign.TabIndex = 0;
             this.butSign.Text = "+/-";
             this.butSign.UseVisualStyleBackColor = false;
+            this.butSign.Click += new System.EventHandler(this.butSign_Click);
             // 
             // but_0
             // 
@@ -80,6 +81,7 @@
             this.but_0.TabIndex = 1;
             this.but_0.Text = "0";
             this.but_0.UseVisualStyleBackColor = false;
+            this.but_0.Click += new System.EventHandler(this.NubButClicked);
             // 
             // butGetResult
             // 
@@ -100,7 +102,7 @@
             this.butDecimalPoint.Location = new System.Drawing.Point(174, 426);
             this.butDecimalPoint.MinimumSize = new System.Drawing.Size(80, 50);
             this.butDecimalPoint.Name = "butDecimalPoint";
-            this.butDecimalPoint.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.butDecimalPoint.Padding = new System.Windows.Forms.Padding(3);
             this.butDecimalPoint.Size = new System.Drawing.Size(80, 50);
             this.butDecimalPoint.TabIndex = 2;
             this.butDecimalPoint.Text = ".";
@@ -125,11 +127,12 @@
             this.but_3.Location = new System.Drawing.Point(174, 370);
             this.but_3.MinimumSize = new System.Drawing.Size(80, 50);
             this.but_3.Name = "but_3";
-            this.but_3.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.but_3.Padding = new System.Windows.Forms.Padding(3);
             this.but_3.Size = new System.Drawing.Size(80, 50);
             this.but_3.TabIndex = 6;
             this.but_3.Text = "3";
             this.but_3.UseVisualStyleBackColor = false;
+            this.but_3.Click += new System.EventHandler(this.NubButClicked);
             // 
             // but_2
             // 
@@ -142,6 +145,7 @@
             this.but_2.TabIndex = 5;
             this.but_2.Text = "2";
             this.but_2.UseVisualStyleBackColor = false;
+            this.but_2.Click += new System.EventHandler(this.NubButClicked);
             // 
             // but_1
             // 
@@ -150,11 +154,12 @@
             this.but_1.Location = new System.Drawing.Point(2, 370);
             this.but_1.MinimumSize = new System.Drawing.Size(80, 50);
             this.but_1.Name = "but_1";
-            this.but_1.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.but_1.Padding = new System.Windows.Forms.Padding(3);
             this.but_1.Size = new System.Drawing.Size(80, 50);
             this.but_1.TabIndex = 4;
             this.but_1.Text = "1";
             this.but_1.UseVisualStyleBackColor = false;
+            this.but_1.Click += new System.EventHandler(this.NubButClicked);
             // 
             // butMult
             // 
@@ -175,11 +180,12 @@
             this.but_9.Location = new System.Drawing.Point(174, 260);
             this.but_9.MinimumSize = new System.Drawing.Size(80, 50);
             this.but_9.Name = "but_9";
-            this.but_9.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.but_9.Padding = new System.Windows.Forms.Padding(3);
             this.but_9.Size = new System.Drawing.Size(80, 50);
             this.but_9.TabIndex = 14;
             this.but_9.Text = "9";
             this.but_9.UseVisualStyleBackColor = false;
+            this.but_9.Click += new System.EventHandler(this.NubButClicked);
             // 
             // but_8
             // 
@@ -192,6 +198,7 @@
             this.but_8.TabIndex = 13;
             this.but_8.Text = "8";
             this.but_8.UseVisualStyleBackColor = false;
+            this.but_8.Click += new System.EventHandler(this.NubButClicked);
             // 
             // but_7
             // 
@@ -200,11 +207,12 @@
             this.but_7.Location = new System.Drawing.Point(2, 260);
             this.but_7.MinimumSize = new System.Drawing.Size(80, 50);
             this.but_7.Name = "but_7";
-            this.but_7.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.but_7.Padding = new System.Windows.Forms.Padding(3);
             this.but_7.Size = new System.Drawing.Size(80, 50);
             this.but_7.TabIndex = 12;
             this.but_7.Text = "7";
             this.but_7.UseVisualStyleBackColor = false;
+            this.but_7.Click += new System.EventHandler(this.NubButClicked);
             // 
             // butMinus
             // 
@@ -225,11 +233,12 @@
             this.but_6.Location = new System.Drawing.Point(174, 316);
             this.but_6.MinimumSize = new System.Drawing.Size(80, 50);
             this.but_6.Name = "but_6";
-            this.but_6.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.but_6.Padding = new System.Windows.Forms.Padding(3);
             this.but_6.Size = new System.Drawing.Size(80, 50);
             this.but_6.TabIndex = 10;
             this.but_6.Text = "6";
             this.but_6.UseVisualStyleBackColor = false;
+            this.but_6.Click += new System.EventHandler(this.NubButClicked);
             // 
             // but_5
             // 
@@ -242,7 +251,7 @@
             this.but_5.TabIndex = 9;
             this.but_5.Text = "5";
             this.but_5.UseVisualStyleBackColor = false;
-            this.but_5.Click += new System.EventHandler(this.button15_Click);
+            this.but_5.Click += new System.EventHandler(this.NubButClicked);
             // 
             // but_4
             // 
@@ -251,11 +260,12 @@
             this.but_4.Location = new System.Drawing.Point(2, 316);
             this.but_4.MinimumSize = new System.Drawing.Size(80, 50);
             this.but_4.Name = "but_4";
-            this.but_4.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.but_4.Padding = new System.Windows.Forms.Padding(3);
             this.but_4.Size = new System.Drawing.Size(80, 50);
             this.but_4.TabIndex = 8;
             this.but_4.Text = "4";
             this.but_4.UseVisualStyleBackColor = false;
+            this.but_4.Click += new System.EventHandler(this.NubButClicked);
             // 
             // butBack
             // 
@@ -266,7 +276,7 @@
             this.butBack.Name = "butBack";
             this.butBack.Size = new System.Drawing.Size(80, 50);
             this.butBack.TabIndex = 23;
-            this.butBack.Text = "⤆";
+            this.butBack.Text = "⟽";
             this.butBack.UseVisualStyleBackColor = false;
             // 
             // button18
@@ -276,7 +286,7 @@
             this.button18.Location = new System.Drawing.Point(174, 149);
             this.button18.MinimumSize = new System.Drawing.Size(80, 50);
             this.button18.Name = "button18";
-            this.button18.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.button18.Padding = new System.Windows.Forms.Padding(3);
             this.button18.Size = new System.Drawing.Size(80, 50);
             this.button18.TabIndex = 22;
             this.button18.Text = "C";
@@ -301,7 +311,7 @@
             this.button20.Location = new System.Drawing.Point(2, 149);
             this.button20.MinimumSize = new System.Drawing.Size(80, 50);
             this.button20.Name = "button20";
-            this.button20.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.button20.Padding = new System.Windows.Forms.Padding(3);
             this.button20.Size = new System.Drawing.Size(80, 50);
             this.button20.TabIndex = 20;
             this.button20.Text = "%";
@@ -326,10 +336,10 @@
             this.button22.Location = new System.Drawing.Point(174, 205);
             this.button22.MinimumSize = new System.Drawing.Size(80, 50);
             this.button22.Name = "button22";
-            this.button22.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.button22.Padding = new System.Windows.Forms.Padding(3);
             this.button22.Size = new System.Drawing.Size(80, 50);
             this.button22.TabIndex = 18;
-            this.button22.Text = "2№x";
+            this.button22.Text = "√x";
             this.button22.UseVisualStyleBackColor = false;
             // 
             // button23
@@ -351,7 +361,7 @@
             this.button24.Location = new System.Drawing.Point(2, 205);
             this.button24.MinimumSize = new System.Drawing.Size(80, 50);
             this.button24.Name = "button24";
-            this.button24.Padding = new System.Windows.Forms.Padding(3, 3, 3, 3);
+            this.button24.Padding = new System.Windows.Forms.Padding(3);
             this.button24.Size = new System.Drawing.Size(80, 50);
             this.button24.TabIndex = 16;
             this.button24.Text = "1/x";
@@ -359,15 +369,15 @@
             // 
             // textBox1
             // 
-            this.textBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.textBox1.Location = new System.Drawing.Point(2, 93);
-            this.textBox1.MaximumSize = new System.Drawing.Size(0, 50);
-            this.textBox1.MinimumSize = new System.Drawing.Size(0, 50);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(338, 50);
-            this.textBox1.TabIndex = 24;
-            this.textBox1.Text = "0";
-            this.textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.textBoxResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.textBoxResult.Location = new System.Drawing.Point(2, 93);
+            this.textBoxResult.MaximumSize = new System.Drawing.Size(338, 50);
+            this.textBoxResult.MinimumSize = new System.Drawing.Size(338, 50);
+            this.textBoxResult.Name = "textBox1";
+            this.textBoxResult.Size = new System.Drawing.Size(338, 38);
+            this.textBoxResult.TabIndex = 24;
+            this.textBoxResult.Text = "0";
+            this.textBoxResult.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // label1
             // 
@@ -378,9 +388,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(338, 38);
             this.label1.TabIndex = 0;
-            this.label1.Text = "label1";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // Form1
             // 
@@ -388,7 +396,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(343, 480);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.butBack);
             this.Controls.Add(this.button18);
             this.Controls.Add(this.button19);
@@ -447,7 +455,7 @@
         private System.Windows.Forms.Button button22;
         private System.Windows.Forms.Button button23;
         private System.Windows.Forms.Button button24;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox textBoxResult;
         private System.Windows.Forms.Label label1;
     }
 }
